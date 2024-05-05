@@ -1,15 +1,12 @@
 # Uncertain Knowledge Graph Completion with Rule Mining
----
 This repo provides codes and data for the paper: Uncertain Knowledge Graph Completion with Rule Mining.
 
 ## Requirement
----
 pytorch == 2.1.1\
 transformers == 4.38.2\
 wandb == 0.16.1
 
 ## Files
----
 `bert-base-uncased` folder contains the BERT model downloaded from hugginface(https://huggingface.co/google-bert/bert-base-uncased) and it will be used in the confidence prediction model.\
 `transformer` folder contains source codes for the rule mining model on uncertain knowledge graph (UKRM).\
 `confidence_prediction.py` is the source code for confidence predcition model (BCP).\
@@ -17,7 +14,6 @@ wandb == 0.16.1
 `decode_rules` folder contains input preprocessed for the confidence prediction model. GLM-4 is used in the process so it is a little time-consuming and we offer the data can be used directly.
 
 ## Usage
----
 To train the rule mining model, you just need to run:\
 `python translate_train.py`\
 To decode rules from the rule mining model, you just need to run:\
@@ -26,7 +22,6 @@ To run the confidence prediction model, you just need to run:\
 `python confidence_predcition.py`
 
 ## Config
----
 Configs are set in python files and in case you want to modify them, here is a description.
 ```
 "data_path": path of kowledge graph
